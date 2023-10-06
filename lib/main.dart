@@ -41,45 +41,57 @@ class _MyCardState extends State<MyCard> {
               'FLUTTER DEVELOPER',
               style: TextStyle(color: Colors.white),
             ),
-            Container(
-            padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+            Card(
+            // padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
               color: Colors.white,
-              height: 50,
-              width: double.infinity,
+              // height: 50,
+              // width: double.infinity,
               margin: EdgeInsets.fromLTRB(35,20,35,10),
               
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Icon(Icons.phone_in_talk_rounded,size: 30,),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text('+91 8368747244'),
-                ],
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Icon(Icons.phone_in_talk_rounded,size: 30,color: Colors.teal,),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text('+91 8368747244',style: TextStyle(color: Colors.teal),),
+                  ],
+                ),
               ),
 
               
             ),
-            Container(
-              padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+            Card(
+              // padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
               color: Colors.white,
-              height: 50,
-              width: double.infinity,
+              // height: 50,
+              // width: double.infinity,
               margin: EdgeInsets.fromLTRB(35,10,35,20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  
-                  Icon(Icons.mail_outline_sharp,size: 30,),
-                  SizedBox(
-                    width: 20,
+              child: Padding(
+                  padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      
+                      Icon(Icons.mail_outline_sharp,size: 30,color: Colors.teal,),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text('amitmishra0323@gmial.com',style: TextStyle(color: Colors.teal),),
+                    ],
                   ),
-                  Text('amitmishra0323@gmial.com'),
-                ],
+                ),
               ),
 
             ),
+
+
+
           ],
         ),
       ),
