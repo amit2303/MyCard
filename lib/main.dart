@@ -41,6 +41,10 @@ class _MyCardState extends State<MyCard> {
               'FLUTTER DEVELOPER',
               style: TextStyle(color: Colors.white),
             ),
+            Divider(
+                color: Colors.white,
+                thickness: 2,
+            ),
             Card(
             // padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
               color: Colors.white,
@@ -48,19 +52,11 @@ class _MyCardState extends State<MyCard> {
               // width: double.infinity,
               margin: EdgeInsets.fromLTRB(35,20,35,10),
               
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Icon(Icons.phone_in_talk_rounded,size: 30,color: Colors.teal,),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text('+91 8368747244',style: TextStyle(color: Colors.teal),),
-                  ],
-                ),
+              child:ListTile(
+                leading: Icon(Icons.phone_in_talk_rounded,size: 30,color: Colors.teal,),
+                title: Text('+91 8368747244',style: TextStyle(color: Colors.teal),),
               ),
+              
 
               
             ),
@@ -70,23 +66,11 @@ class _MyCardState extends State<MyCard> {
               // height: 50,
               // width: double.infinity,
               margin: EdgeInsets.fromLTRB(35,10,35,20),
-              child: Padding(
-                  padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      
-                      Icon(Icons.mail_outline_sharp,size: 30,color: Colors.teal,),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text('amitmishra0323@gmial.com',style: TextStyle(color: Colors.teal),),
-                    ],
-                  ),
-                ),
+              child: ListTile(
+                leading: Icon(Icons.mail_outline_sharp,size: 30,color: Colors.teal,),
+                title: Text('amitmishra0323@gmial.com',style: TextStyle(color: Colors.teal),),
               ),
+              
 
             ),
 
@@ -98,3 +82,36 @@ class _MyCardState extends State<MyCard> {
     );
   }
 }
+
+
+// child: Padding(
+//                   padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+//                 child: Padding(
+//                   padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.start,
+//                     children: [
+                      
+//                       Icon(Icons.mail_outline_sharp,size: 30,color: Colors.teal,),
+//                       SizedBox(
+//                         width: 20,
+//                       ),
+//                       Text('amitmishra0323@gmial.com',style: TextStyle(color: Colors.teal),),
+//                     ],
+//                   ),
+//                 ),
+//               ),
+
+// Padding(
+              //   padding: EdgeInsets.fromLTRB(10, 4, 1, 4),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.start,
+              //     children: [
+              //       Icon(Icons.phone_in_talk_rounded,size: 30,color: Colors.teal,),
+              //       SizedBox(
+              //         width: 20,
+              //       ),
+              //       Text('+91 8368747244',style: TextStyle(color: Colors.teal),),
+              //     ],
+              //   ),
+              // ),
